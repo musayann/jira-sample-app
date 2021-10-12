@@ -1,18 +1,16 @@
 import logo from '../logo.svg';
-import '../App.css';
 
-
-function Dashboard() {
+function Home() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+    <div className="App bg-gray-900 text-white h-screen flex items-center">
+      <header className="App-header text-center w-full">
+        <img src={logo} className="w-2/4 inline-block" alt="logo" />
+        <p className="mb-6">
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
+          className="border border-solid border-white px-5 py-3 inline-block hover:bg-white hover:text-gray-900 rounded"
           href={process.env.REACT_APP_AUTH_URI}
           target="_blank"
           rel="noopener noreferrer"
@@ -24,4 +22,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Home;

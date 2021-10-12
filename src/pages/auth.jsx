@@ -1,4 +1,3 @@
-import "../App.css";
 import { useLocation, useHistory } from "react-router-dom";
 import React, { useEffect } from "react";
 

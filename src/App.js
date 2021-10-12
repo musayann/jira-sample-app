@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Auth from './pages/auth';
 import Dashboard from './pages/dashboard'
+import Project from './pages/project'
 import Home from './pages/index'
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -25,6 +26,9 @@ export default function App() {
           </Route>
           <Route path="/dashboard">
             <Dashboard />
+          </Route>
+          <Route path="/project/:cloudId/:id">
+            <Project />
           </Route>
           <Route path="/">
             <Home />
